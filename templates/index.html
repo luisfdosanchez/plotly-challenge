@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luis' dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Plotly! -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Bootstrap! -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Belly Button Biodiversity Dashboard</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Dashboard</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-secondary text-center">Use the interactive charts below to explore the dataset</p>
+            </div>
+        </div>
+    </div>
+    <div class="dasharea">
+        <div class="row">
+            <div class="col-3" id="tabla1">
+                <label for="idd">Select subject id:</label>
+                <select class="custom-select d-block w-100" id="idd" required>
+                    <option value="">Choose...</option>
+                </select>
+            </div>
+            <div class="col-4" id="grafica1"></div> 
+            <div class="col-5" id="grafica2"></div> 
+        </div>
+        <div class="row">
+            <div class="col" id="grafica3"></div>
+        </div>
+    </div>
+</div>
+    
+    <script src="/static/js/logic.js"></script>
+</body>
+</html>
